@@ -8,5 +8,6 @@ env\Scripts\activate.bat
 2. Lanjutkan dengan running
 <br>perintah dibawah
 ```ruby
-python main.py
+python main.py -P [PORT]
+[PORT] = port dari perangkat yang terpasang
 ```
