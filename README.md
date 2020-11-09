@@ -5,9 +5,8 @@ lalu run perintah dibawah :
 ```
 env\Scripts\activate.bat
 ```
-<br>
-2. Lanjutkan dengan running<br>
-```
+2. Lanjutkan dengan running
+<br>perintah dibawah
+```ruby
 python main.py
 ```
-<br>
