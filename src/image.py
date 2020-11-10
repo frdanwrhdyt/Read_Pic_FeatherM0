@@ -2,6 +2,7 @@ import binascii
 import cv2
 import numpy as np
 import os
+import serial
 
 __version__ = 0.1
 
@@ -28,11 +29,11 @@ class Image:
                 file.close()
 
 class Command:
-    def __init__(self, com, s) -> None:
-        self.com = com
-        self.serial = s
+    def __init__(self, baud, port) -> None:
+        self.serial = serial.Serial(baudrate=baud, port=port)
 
-    def send_command(self):
+    def send_command(self, com):
+        self.com = com
         ser = self.serial
         print('[PROCESSING]...')
         com = bytes(self.com, 'utf-8')
